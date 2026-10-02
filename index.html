@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>NetPoint — Buy a plan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="page-plans">
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-icon is-connecting" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 10c4-4 12-4 16 0"/><path d="M7 13c2.5-2.5 7.5-2.5 10 0"/><circle cx="12" cy="17" r="1.2" fill="currentColor" stroke="none"/></svg>
+      </span>
+      <span class="brand-name">Net<span class="brand-accent">Point</span></span>
+    </div>
+    <div class="topbar-right">
+      <span class="network-name" id="networkName">Connecting…</span>
+      <span class="icon-btn" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="10" r="3"/><path d="M6 18c1.5-3 4-4 6-4s4.5 1 6 4"/></svg>
+      </span>
+      <span class="icon-btn" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </span>
+    </div>
+  </header>
+
+  <main class="wrap wrap-wide">
+
+    <section class="hero hero-plans">
+      <div class="hero-heading">
+        <span class="hero-badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 10c4-4 12-4 16 0"/><path d="M7 13c2.5-2.5 7.5-2.5 10 0"/><circle cx="12" cy="17" r="1.2" fill="currentColor" stroke="none"/></svg>
+        </span>
+        <div>
+          <h1>Pick a <span class="accent-text">plan</span></h1>
+          <p class="lede">Pay with M-Pesa. Your voucher connects this device automatically.</p>
+        </div>
+      </div>
+
+      <ul class="feature-list">
+        <li>
+          <span class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V6z"/></svg>
+          </span>
+          <span><strong>Fast &amp; secure</strong><small>M-Pesa payments</small></span>
+        </li>
+        <li>
+          <span class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg>
+          </span>
+          <span><strong>Instant access</strong><small>Auto connection</small></span>
+        </li>
+        <li>
+          <span class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><line x1="3" y1="12" x2="21" y2="12"/><path d="M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>
+          </span>
+          <span><strong>Reliable network</strong><small>Stay connected</small></span>
+        </li>
+      </ul>
+    </section>
+
+    <nav class="tabs" role="tablist" aria-label="Portal sections">
+      <a class="tab" href="connect.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 10c4-4 12-4 16 0"/><path d="M7 13c2.5-2.5 7.5-2.5 10 0"/><circle cx="12" cy="17" r="1.2" fill="currentColor" stroke="none"/></svg>
+        Connect
+      </a>
+      <a class="tab is-active" href="index.html" aria-current="page">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.8h7.6a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="9" cy="20" r="1"/><circle cx="17" cy="20" r="1"/></svg>
+        Buy a plan
+      </a>
+      <a class="tab" href="connect.html?tab=recent">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="8" y1="16" x2="16" y2="16"/></svg>
+        Recent vouchers
+      </a>
+    </nav>
+
+    <ul class="plan-grid" id="planList" aria-live="polite"></ul>
+
+  </main>
+
+  <div class="dot-grid" aria-hidden="true"></div>
+
+  <footer class="foot foot-plans">
+    <nav class="foot-nav" aria-label="Footer">
+      <a href="connect.html">Connect</a>
+      <span aria-hidden="true">·</span>
+      <a href="index.html">Buy a plan</a>
+      <span aria-hidden="true">·</span>
+      <a href="connect.html?tab=recent">Recent vouchers</a>
+    </nav>
+    <div class="foot-plans-row">
+      <span class="foot-line"></span>
+      <span>Fast, secure, and reliable — session details stay on this device</span>
+      <span class="foot-line"></span>
+    </div>
+  </footer>
+
+  <p class="copyright copyright-plans">&copy; <span id="copyYear"></span> CeeTech. All rights reserved.</p>
+
+  <div class="sheet" id="paySheet" hidden>
+    <div class="sheet-card" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+      <h2 id="sheetTitle">Enter your M-Pesa number</h2>
+      <p class="sheet-plan" id="sheetPlanLabel"></p>
+      <label for="phoneInput">Phone number</label>
+      <input type="tel" id="phoneInput" placeholder="07XX XXX XXX" inputmode="numeric">
+      <p class="field-error" id="phoneError" hidden>Enter a valid phone number</p>
+      <p class="field-error" id="payError" hidden>Could not start the payment. Try again.</p>
+      <div class="sheet-actions">
+        <button class="btn btn-ghost" id="sheetCancel" type="button">Cancel</button>
+        <button class="btn btn-primary" id="sheetPay" type="button">
+          <span class="btn-label">Send payment prompt</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="plans.js"></script>
+</body>
+</html>

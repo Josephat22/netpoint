@@ -1,0 +1,16 @@
+# Real credentials — never commit this. Track config.example.php instead,
+# and each deployment copies it to config.php and fills in real values.
+config.php
+
+# Temporary diagnostic script from setup — should never exist on a real
+# deployment, but ignored here in case it gets recreated during testing.
+db_test.php
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+
+# Logs, if anything ever writes them locally
+*.log
